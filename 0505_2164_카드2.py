@@ -1,10 +1,9 @@
-import sys
-from collections import deque
-
-
 ## 풀이 1
 # deque 자료구조에 원소들을 저장해서 popleft로 하나씩 꺼내버리고 rotate 함수로 회전시키는 풀이
 # pop을 두 번 하는 대신 rotate 함수를 씀으로써 시간 복잡도를 줄일 수 있음
+import sys
+from collections import deque
+
 a = int(input())
 lst = deque([i for i in range(1, a+1)])
 

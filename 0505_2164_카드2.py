@@ -24,6 +24,10 @@ print(lst[0])
 
 ## 풀이 2
 # 풀이 1에서는 밑으로보내는 카드를 rotate를 써서 보냈는데, 그냥 pop한걸 다시 append 해줘도 된다. 
+
+import sys
+from collections import deque
+
 a = int(input())
 lst = deque([i for i in range(1, a+1)])
 
